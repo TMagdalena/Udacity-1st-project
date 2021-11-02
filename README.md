@@ -22,8 +22,9 @@ Policy definition is in tagging-policy.json file, packer template in server.json
 Using Azure CLI connect to your Azure account to deploy your infrastructure.
 
 1. Run packer build on Packer template. This will create Packer image.
+```
 $ packer run
-
+```
 
 2. Check your infrastructure using terraform plan on terraform template. Then apply that infrastructure using command terraform apply.
 
