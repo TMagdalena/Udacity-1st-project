@@ -17,7 +17,17 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-**Your words here**
+
+Policy definition is in tagging-policy.json file, packer template in server.json file and terraform template in main.tf file. Detailed instructions on how to use those files are given in "Instructions" section.
+Using Azure CLI connect to your Azure account to deploy your infrastructure.
+
+1. Run packer build on Packer template. This will create Packer image.
+$ packer run
+
+
+2. Check your infrastructure using terraform plan on terraform template. Then apply that infrastructure using command terraform apply.
+
+Variables defined in variables.tf file ensure that the parameters which define infrastructure can be changed. For example, number of virtual machines on a server can be user defined.
 
 ### Output
 **Your words here**
